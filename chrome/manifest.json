@@ -1,0 +1,24 @@
+{
+    "name": "Microsoft news Extensions",
+    "version": "1.0",
+    "description": "Extends microsoft news functionality",
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "http://www.msn.com/*",
+        "https://www.msn.com/*"
+    ],
+    "background": {
+        "scripts": ["source/main.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://www.msn.com/*", "https://www.msn.com/*"],
+          "js": ["source/helpers.js", "source/inject.js"],
+          "css": ["source/inject.css"],
+          "run_at":"document_start"
+        }
+    ],
+    "manifest_version": 2
+}
