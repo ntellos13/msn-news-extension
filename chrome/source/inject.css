@@ -1,0 +1,3 @@
+.msn-ext > ul { display: table; table-layout: fixed; height: 34px; }
+.msn-ext > ul > li { display: table-cell; vertical-align: middle; }
+.msn-ext > ul > li > a { font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif; color: #505050 }
